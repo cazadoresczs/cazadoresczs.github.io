@@ -53,7 +53,7 @@
       text-decoration: none;
       color: white;
       background: rgba(20,20,20,0.7);
-      border: 1px solid rgba(255,255,255,0.15);
+     /* border: 1px solid rgba(255,255,255,0.15); */
       /* backdrop-filter: blur(4px); */
       transition: 0.2s;
       font-size: 1.1em;
@@ -69,6 +69,11 @@
       font-size: 0.8em;
       opacity: 0.7;
     }
+    .links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
   </style>
 </head>
@@ -81,7 +86,8 @@
 
     <div class="links">
       <a href="https://open.spotify.com/artist/32AktaRVnYmu78yOaFqIcp?si=VfuMp2gWRzesBehCvMhphA" target="_blank">
-  Escuchar en Spotify
+<img src="img/icons/spotify.png" class="icon">
+        Escuchar en Spotify
 </a>
       <a href="https://www.youtube.com/@cazadoresczs" target="_blank">
   Ver en YouTube
