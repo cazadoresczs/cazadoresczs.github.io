@@ -46,17 +46,18 @@
     }
 
     .links a {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 12px;
       margin: 12px 0;
       padding: 16px;
       border-radius: 14px;
       text-decoration: none;
       color: white;
       background: rgba(20,20,20,0.7);
-     /* border: 1px solid rgba(255,255,255,0.15); */
-      /* backdrop-filter: blur(4px); */
       transition: 0.2s;
-      font-size: 1.1em;
+      font-size: 1.05em;
     }
 
     .links a:hover {
@@ -64,20 +65,16 @@
       background: rgba(40,40,40,0.8);
     }
 
+    .icon {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+
     .footer {
       margin-top: 25px;
       font-size: 0.8em;
       opacity: 0.7;
-    }
-    .links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-    }
-    .icon {
-  width: 22px;
-  height: 22px;
-  margin-right: 10px;
     }
 
   </style>
@@ -90,20 +87,27 @@
     <img src="./img/logo.png" class="logo" alt="CZS Logo">
 
     <div class="links">
+
       <a href="https://open.spotify.com/artist/32AktaRVnYmu78yOaFqIcp?si=VfuMp2gWRzesBehCvMhphA" target="_blank">
-<img src="img/icons/spotify.png" class="icon">
+        <img src="img/icons/spotify.png" class="icon">
         Escuchar en Spotify
-</a>
+      </a>
+
       <a href="https://www.youtube.com/@cazadoresczs" target="_blank">
-  Ver en YouTube
-</a>
+        <img src="img/icons/youtube.png" class="icon">
+        Ver en YouTube
+      </a>
+
       <a href="https://music.youtube.com/channel/UCF5E5XfyHG7l5eleAzi-4ag" target="_blank">
-  Escuchar en YouTube Music
-</a>
+        <img src="img/icons/youtubemusic.png" class="icon">
+        Escuchar en YouTube Music
+      </a>
+
       <a href="https://www.instagram.com/cazadores_czs/" target="_blank">
-  Instagram
-</a>
-      
+        <img src="img/icons/instagram.png" class="icon">
+        Instagram
+      </a>
+
     </div>
 
     <div class="footer">
