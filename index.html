@@ -81,19 +81,25 @@
   margin-top: 28px;
   font-size: 0.8em;
   line-height: 1.6;
-  text-align: center;
   color: rgba(255,255,255,0.75);
 }
 
 .band div {
-  margin: 2px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 10px;
 }
 
 .band .name {
+  text-align: right;
   font-weight: 500;
   color: rgba(255,255,255,0.95);
 }
 
+.band .role::before {
+  content: "— ";
+}
   </style>
 </head>
 
@@ -131,15 +137,14 @@
       </a>
 
     </div>
-    
-   <div class="band">
-  <div><span class="name">Alberto Segura</span> — teclados y coros</div>
-  <div><span class="name">Alex Cámara</span> — voz y guitarra</div>
-  <div><span class="name">Gustavo Cormack</span> — batería</div>
-  <div><span class="name">Hernán “Pipa” Rodrigue</span> — saxo</div>
-  <div><span class="name">Manuela Noseda</span> — coros</div>
-  <div><span class="name">Marcelo Noseda</span> — guitarra y coros</div>
-  <div><span class="name">Martín Carro Vila</span> — bajo</div>
+<div class="band">
+  <div><span class="name">Alex Camara</span><span class="role">voz y guitarra</span></div>
+  <div><span class="name">Gustavo Cormack</span><span class="role">batería</span></div>
+  <div><span class="name">Hernán “Pipa” Rodriguez</span><span class="role">saxo</span></div>
+  <div><span class="name">Manuela Noseda</span><span class="role">coros</span></div>
+  <div><span class="name">Marcelo Noseda</span><span class="role">guitarra y coros</span></div>
+  <div><span class="name">Martín Carro Vila</span><span class="role">bajo</span></div>
+  <div><span class="name">Alberto Segura</span><span class="role">teclados y coros</span></div>
 </div>
 
     <div class="footer">
