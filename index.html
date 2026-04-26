@@ -82,6 +82,12 @@
   font-size: 0.8em;
   line-height: 1.6;
   color: rgba(255,255,255,0.75);
+
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 2px;
 }
 
 .band div {
@@ -99,6 +105,9 @@
 
 .band .role::before {
   content: "— ";
+}
+    .band div {
+  display: contents;
 }
   </style>
 </head>
