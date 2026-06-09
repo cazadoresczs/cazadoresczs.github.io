@@ -15,14 +15,15 @@
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
-    body {
-  height: 100vh;
+body {
+  min-height: 100vh;
+  padding: 30px 0;
   background: #0b1a2a url('./img/fondo.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgba(255,255,255,0.92);
 }
 
   body::before {
@@ -41,6 +42,10 @@
       max-width: 400px;
       z-index: 1;
     }
+
+.container {
+  padding-top: 40px;
+}
 
     .logo {
       width: 160px;
