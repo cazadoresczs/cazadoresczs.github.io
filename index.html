@@ -114,6 +114,40 @@
     .band div {
   display: contents;
 }
+.show-button {
+  display: flex !important;
+  align-items: center;
+  gap: 14px;
+  margin: 0 auto 18px auto !important;
+  padding: 14px 18px !important;
+
+  background: rgba(255, 80, 80, 0.85) !important;
+  color: white !important;
+
+  border-radius: 14px;
+  text-decoration: none;
+  width: fit-content;
+  min-width: 260px;
+
+  transition: 0.2s;
+}
+
+.show-button:hover {
+  transform: scale(1.03);
+  background: rgba(255, 100, 100, 0.9) !important;
+}
+
+.show-date {
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
+.show-info {
+  text-align: left;
+  line-height: 1.2;
+}
   </style>
 </head>
 
@@ -125,6 +159,14 @@
 
     <div class="links">
       
+	<a href="https://venti.com.ar/evento/buenos-aires-groove-en-humboldt-niceto-club" target="_blank" class="show-button">
+	  <div class="show-date">01 AGO</div>
+	  <div class="show-info">
+	    <strong>HUMBOLDT Niceto Club</strong><br>
+	    Buenos Aires · Entradas
+	  </div>
+	</a>
+
       <a href="https://www.instagram.com/cazadores_czs/" target="_blank">
         <img src="img/icons/instagram.png" class="icon">
         Instagram
