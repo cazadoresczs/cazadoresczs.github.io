@@ -172,7 +172,7 @@ body {
   margin-bottom: 16px;
 }
 .recent-shows {
-  margin: 0 auto 32px auto;
+  margin: 32px auto 28px auto;
   max-width: 400px;
   text-align: center;
 }
@@ -205,12 +205,22 @@ body {
   color: rgba(255,255,255,0.95);
   font-weight: 600;
 }
+
+/* Etiqueta "Próximo show" */
 .next-show-title {
   margin-bottom: 10px;
   font-size: 0.75em;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.55);
+}
+
+/* Devuelve el tamaño grande a la fecha del botón (la regla .show-date de arriba lo pisaba) */
+.show-button .show-date {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: white;
 }
   </style>
 </head>
@@ -220,71 +230,18 @@ body {
   <div class="container">
 
     <img src="./img/logo.png" class="logo" alt="CZS Logo">
-	  <div class="next-show-title">Próximo show</div>
-	  <a href="https://venti.live/evento/cazadores-conor-delia-en-humboldt-niceto-club" target="_blank" class="show-button">
-	  <div class="show-date">07 NOV</div>
-	  <div class="show-info">
-	    <strong>HUMBOLDT Niceto Club</strong><br>
-	    Buenos Aires · Entradas
-	  </div>
-	</a>
-<div class="bio">
 
-  <p>Cazadores es una banda argentina de funk que combina groove, elegancia,
-  potencia y una identidad sonora propia. Con una propuesta que también
-  fusiona con el soul y el pop, el grupo construyó un lugar destacado
-  dentro de la escena independiente argentina.</p>
+    <div class="next-show-title">Próximo show</div>
 
-  <p>Tras más de veinte años de pausa, Cazadores regresó con una formación renovada,
-  nuevas composiciones y un show en vivo sólido, enérgico y de nivel internacional,
-  manteniendo la esencia que siempre caracterizó a la banda.</p>
-
-  <p>Durante su primera etapa editó dos discos independientes, y uno de sus temas,
-  "Emoción", fue seleccionado para integrar un compilado producido por Zeta Bosio,
-  uno de los músicos y productores más influyentes del rock latinoamericano.</p>
-
-  <p>En esta nueva etapa, la banda lanzó los EP "Dame Uno Más" y "Cerca de Mí",
-  además de los sencillos "Quién" y "Sos lo Máximo",
-  disponibles en las principales plataformas digitales.</p>
-
-  <p>El regreso de Cazadores también despertó el interés de la prensa especializada,
-  incluyendo una nota en el diario Página/12, que destacó la vuelta de la banda
-  y su propuesta musical.</p>
-
-  <p>Sobre el escenario, Cazadores ofrece un espectáculo dinámico, elegante
-  y altamente bailable, con músicos de amplia experiencia y una puesta en escena
-  profesional. Su sonido, fuertemente influenciado por el funk internacional pero
-  con una identidad propia, la convierte en una propuesta ideal para abrir
-  conciertos de artistas de proyección internacional.</p>
-
-</div>
-	<div class="recent-shows">
-
-  <div class="recent-shows-title">Shows recientes</div>
-
-  <div class="show">
-    <div class="show-date">14/03/2026</div>
-    <div class="show-place">
-      Strummer Bar (CABA) — <span class="sold-out">SOLD OUT</span>
-    </div>
-  </div>
-
-  <div class="show">
-    <div class="show-date">16/04/2026</div>
-    <div class="show-place">
-      Fiesta BOOYAH! en ClubVBar (CABA)
-    </div>
-  </div>
-
-  <div class="show">
-    <div class="show-date">01/08/2026</div>
-    <div class="show-place">
-      NicetoClub HUMBOLDT (CABA) — <span class="sold-out">SOLD OUT</span>
-    </div>
-  </div>
-
-</div>
     <div class="links">
+      <a href="https://venti.live/evento/cazadores-conor-delia-en-humboldt-niceto-club" target="_blank" class="show-button">
+        <div class="show-date">07 NOV</div>
+        <div class="show-info">
+          <strong>HUMBOLDT Niceto Club</strong><br>
+          Buenos Aires · Entradas
+        </div>
+      </a>
+
       <a href="https://www.instagram.com/cazadores_czs/" target="_blank">
         <img src="img/icons/instagram.png" class="icon">
         Instagram
@@ -305,32 +262,93 @@ body {
         YouTube Music
       </a>
       <!--
-		<a href="https://music.apple.com/us/artist/cazadores/1808083107" target="_blank">
+      <a href="https://music.apple.com/us/artist/cazadores/1808083107" target="_blank">
         <img src="img/icons/applemusic.png" class="icon">
         Apple Music
       </a>
       -->
       <a href="mailto:cazadoresczs@gmail.com">
-  <img src="img/icons/mail.png" class="icon">
-  Contacto
+        <img src="img/icons/mail.png" class="icon">
+        Contacto
       </a>
+    </div>
+
+    <div class="recent-shows">
+
+      <div class="recent-shows-title">Shows recientes</div>
+
+      <div class="show">
+        <div class="show-date">14/03/2026</div>
+        <div class="show-place">
+          Strummer Bar (CABA) — <span class="sold-out">SOLD OUT</span>
+        </div>
+      </div>
+
+      <div class="show">
+        <div class="show-date">16/04/2026</div>
+        <div class="show-place">
+          Fiesta BOOYAH! en ClubVBar (CABA)
+        </div>
+      </div>
+
+      <div class="show">
+        <div class="show-date">01/08/2026</div>
+        <div class="show-place">
+          NicetoClub HUMBOLDT (CABA) — <span class="sold-out">SOLD OUT</span>
+        </div>
+      </div>
 
     </div>
-<div class="band">
-  <div><span class="name">Alex Camara</span><span class="role">voz y guitarra</span></div>
-  <div><span class="name">Gustavo Cormack</span><span class="role">batería</span></div>
-  <div><span class="name">Hernán “Pipa” Rodriguez</span><span class="role">saxo</span></div>
-  <div><span class="name">Hernán Sánchez</span><span class="role">trompeta</span></div>	
-  <div><span class="name">Manuela Noseda</span><span class="role">coros</span></div>
-  <div><span class="name">Marcelo Noseda</span><span class="role">guitarra y coros</span></div>
-  <div><span class="name">Martín Carro Vila</span><span class="role">bajo</span></div>
-  <div><span class="name">Alberto Segura</span><span class="role">teclados y coros</span></div>
- </div>
-<iframe class="spotify-player" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2rzT2zZSdwSSc3AVqzgMj8?utm_source=generator&theme=0&si=53f62e74c8704ba8" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-<div class="footer">
-      © 2026 CAZADORES · FUNK
-</div>
 
+    <div class="bio">
+
+      <p>Cazadores es una banda argentina de funk que combina groove, elegancia,
+      potencia y una identidad sonora propia. Con una propuesta que también
+      fusiona con el soul y el pop, el grupo construyó un lugar destacado
+      dentro de la escena independiente argentina.</p>
+
+      <p>Tras más de veinte años de pausa, Cazadores regresó con una formación renovada,
+      nuevas composiciones y un show en vivo sólido, enérgico y de nivel internacional,
+      manteniendo la esencia que siempre caracterizó a la banda.</p>
+
+      <p>Durante su primera etapa editó dos discos independientes, y uno de sus temas,
+      "Emoción", fue seleccionado para integrar un compilado producido por Zeta Bosio,
+      uno de los músicos y productores más influyentes del rock latinoamericano.</p>
+
+      <p>En esta nueva etapa, la banda lanzó los EP "Dame Uno Más" y "Cerca de Mí",
+      además de los sencillos "Quién" y "Sos lo Máximo",
+      disponibles en las principales plataformas digitales.</p>
+
+      <p>El regreso de Cazadores también despertó el interés de la prensa especializada,
+      incluyendo una nota en el diario Página/12, que destacó la vuelta de la banda
+      y su propuesta musical.</p>
+
+      <p>Sobre el escenario, Cazadores ofrece un espectáculo dinámico, elegante
+      y altamente bailable, con músicos de amplia experiencia y una puesta en escena
+      profesional. Su sonido, fuertemente influenciado por el funk internacional pero
+      con una identidad propia, la convierte en una propuesta ideal para abrir
+      conciertos de artistas de proyección internacional.</p>
+
+    </div>
+
+    <div class="band">
+      <div><span class="name">Alex Camara</span><span class="role">voz y guitarra</span></div>
+      <div><span class="name">Gustavo Cormack</span><span class="role">batería</span></div>
+      <div><span class="name">Hernán “Pipa” Rodriguez</span><span class="role">saxo</span></div>
+      <div><span class="name">Hernán Sánchez</span><span class="role">trompeta</span></div>
+      <div><span class="name">Manuela Noseda</span><span class="role">coros</span></div>
+      <div><span class="name">Marcelo Noseda</span><span class="role">guitarra y coros</span></div>
+      <div><span class="name">Martín Carro Vila</span><span class="role">bajo</span></div>
+      <div><span class="name">Alberto Segura</span><span class="role">teclados y coros</span></div>
+    </div>
+
+    <iframe class="spotify-player" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2rzT2zZSdwSSc3AVqzgMj8?utm_source=generator&theme=0&si=53f62e74c8704ba8" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <div class="footer">
+      © 2026 CAZADORES · FUNK
+    </div>
+
+  </div>
 
 </body>
 </html>
